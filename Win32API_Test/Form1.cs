@@ -22,32 +22,21 @@ namespace Win32API_Test
 
         protected override void WndProc(ref Message m)
         {
-
-
-
-
-
-
-
-
-
-
-
-            if (m.Msg == 0x00A)
-            {
-                Console.WriteLine("0x00A");
-                //Win32API.DefWindowProc((IntPtr)m.Msg, (uint)m.Msg, (int)m.WParam, (int)m.LParam);
-                base.WndProc(ref m);
-            }
-            else if (m.Msg == WindowsMsg.WM_CLOSE)
-            {
-                Console.WriteLine("WM_CLOSE = " + m.Msg);
-                base.WndProc(ref m);
-            }
-            else
-            {
-                base.WndProc(ref m);
-            }
+            //if (m.Msg == 0x00A)
+            //{
+            //    Console.WriteLine("0x00A");
+            //    //Win32API.DefWindowProc((IntPtr)m.Msg, (uint)m.Msg, (int)m.WParam, (int)m.LParam);
+            //    base.WndProc(ref m);
+            //}
+            //else if (m.Msg == WindowsMsg.WM_CLOSE)
+            //{
+            //    Console.WriteLine("WM_CLOSE = " + m.Msg);
+            //    base.WndProc(ref m);
+            //}
+            //else
+            //{
+            //    base.WndProc(ref m);
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)
