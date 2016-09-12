@@ -24,7 +24,7 @@ namespace Win32API_Test
         {
             if (m.Msg == 0x010A)
             {
-                Console.WriteLine("0x00A");
+                Console.WriteLine("0xbtyrh46hghtfhfhnjghgng00A");
                 //Win32API.DefWindowProc((IntPtr)m.Msg, (uint)m.Msg, (int)m.WParam, (int)m.LParam);
                 base.WndProc(ref m);
             }
