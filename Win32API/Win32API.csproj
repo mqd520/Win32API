@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{516555BC-5CA2-4E93-A0CE-B68712B273CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Win32API</RootNamespace>
+    <AssemblyName>Win32API</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Win32API.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00 常量定义\00 Delegate.cs" />
+    <Compile Include="00 常量定义\AnimateWndFlags.cs" />
+    <Compile Include="00 常量定义\BtnState.cs" />
+    <Compile Include="00 常量定义\ClassLongIndex.cs" />
+    <Compile Include="00 常量定义\DCExFlag.cs" />
+    <Compile Include="00 常量定义\FUFlags.cs" />
+    <Compile Include="00 常量定义\GetNextWndCmd.cs" />
+    <Compile Include="00 常量定义\HookType.cs" />
+    <Compile Include="00 常量定义\NcHitTestCmd.cs" />
+    <Compile Include="00 常量定义\SCMonitorPowerCmd.cs" />
+    <Compile Include="00 常量定义\SysCmd.cs" />
+    <Compile Include="00 常量定义\SysMetericsIndex.cs" />
+    <Compile Include="00 常量定义\TileWindowsHow.cs" />
+    <Compile Include="00 常量定义\WindowLongIndex.cs" />
+    <Compile Include="00 常量定义\WindowPosCmd.cs" />
+    <Compile Include="00 常量定义\WindowPosFlag.cs" />
+    <Compile Include="00 数据结构\MouseHook.cs" />
+    <Compile Include="00 数据结构\NcClientData.cs" />
+    <Compile Include="00 数据结构\PaintStruct .cs" />
+    <Compile Include="00 数据结构\Point.cs" />
+    <Compile Include="00 常量定义\WndExStyle.cs" />
+    <Compile Include="00 常量定义\WndPlacementCmd.cs" />
+    <Compile Include="00 常量定义\WndPlacementFlag.cs" />
+    <Compile Include="00 数据结构\Rect.cs" />
+    <Compile Include="00 数据结构\WindowPlacement.cs" />
+    <Compile Include="00 数据结构\WndClass.cs" />
+    <Compile Include="00 数据结构\WndClassEx.cs" />
+    <Compile Include="01 窗口管理\00 窗口函数.cs" />
+    <Compile Include="01 窗口管理\01 易用特性函数.cs" />
+    <Compile Include="01 窗口管理\02 按钮函数.cs" />
+    <Compile Include="01 窗口管理\03 插入标记函数.cs" />
+    <Compile Include="01 窗口管理\04 组合框函数.cs" />
+    <Compile Include="01 窗口管理\16 坐标变换.cs" />
+    <Compile Include="02 设备上下文%28DC%29\Class1.cs" />
+    <Compile Include="08 硬件和系统\01 鼠标函数.cs" />
+    <Compile Include="01 窗口管理\06 对话框函数.cs" />
+    <Compile Include="01 窗口管理\08 列表框函数.cs" />
+    <Compile Include="01 窗口管理\09 菜单处理.cs" />
+    <Compile Include="01 窗口管理\10 多文档处理.cs" />
+    <Compile Include="01 窗口管理\11 滚动条函数.cs" />
+    <Compile Include="01 窗口管理\12 窗口类函数.cs" />
+    <Compile Include="01 窗口管理\13 窗口过程函数.cs" />
+    <Compile Include="01 窗口管理\14 窗口属性函数.cs" />
+    <Compile Include="01 窗口管理\07 编辑控制函数.cs" />
+    <Compile Include="00 常量定义\WndStyle.cs" />
+    <Compile Include="00 常量定义\ShowWindowCmd.cs" />
+    <Compile Include="01 窗口管理\15 消息处理.cs" />
+    <Compile Include="08 硬件和系统\00 Sys.cs" />
+    <Compile Include="00 常量定义\Msg.cs" />
+    <Compile Include="08 硬件和系统\02 键盘函数.cs" />
+    <Compile Include="10 其它\Tool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="03 绘图处理\" />
+    <Folder Include="04 位图和图标\" />
+    <Folder Include="05 文件处理\" />
+    <Folder Include="07 文本和字体处理\" />
+    <Folder Include="09 进程和线程\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
