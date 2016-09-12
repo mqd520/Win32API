@@ -22,9 +22,9 @@ namespace Win32API_Test
 
         protected override void WndProc(ref Message m)
         {
-            if (m.Msg == 0x010A)
+            if (m.Msg == 0x00A)
             {
-                Console.WriteLine("0x00A");
+                Console.WriteLine("0xsadasdadsadassa00A");
                 //Win32API.DefWindowProc((IntPtr)m.Msg, (uint)m.Msg, (int)m.WParam, (int)m.LParam);
                 base.WndProc(ref m);
             }
