@@ -21,5 +21,15 @@ namespace Mqd.Win32.DataDef
         /// 以像素计算的普通窗口标题的高度
         /// </summary>
         public const int SM_CYCAPTION = 4;
+
+        /// <summary>
+        /// 获取屏幕工作区宽度
+        /// </summary>
+        public const int SM_CXFULLSCREEN = 16;
+
+        /// <summary>
+        /// 获取屏幕工作区高度
+        /// </summary>
+        public const int SM_CYFULLSCREEN = 17;
     }
 }

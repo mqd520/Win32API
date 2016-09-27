@@ -50,5 +50,16 @@ namespace Mqd.Win32.API
         /// <returns></returns>
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         public static extern bool UnhookWindowsHookEx(IntPtr hhk);
+
+        /// <summary>
+        /// 函数查询或设置系统级参数
+        /// </summary>
+        /// <param name="uiAction">指定要查询或设置的系统级参数</param>
+        /// <param name="uiParam"></param>
+        /// <param name="uiParam"></param>
+        /// <param name="fWinIni"></param>
+        /// <returns></returns>
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern int SystemParametersInfo(int uiAction, int uiParam, IntPtr pvParam, int fWinIni);
     }
 }

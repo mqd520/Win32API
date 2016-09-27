@@ -49,6 +49,7 @@
     <Compile Include="00 常量定义\SCMonitorPowerCmd.cs" />
     <Compile Include="00 常量定义\SysCmd.cs" />
     <Compile Include="00 常量定义\SysMetericsIndex.cs" />
+    <Compile Include="00 常量定义\SysParaInfo.cs" />
     <Compile Include="00 常量定义\TileWindowsHow.cs" />
     <Compile Include="00 常量定义\WindowLongIndex.cs" />
     <Compile Include="00 常量定义\WindowPosCmd.cs" />
